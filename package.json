@@ -1,0 +1,76 @@
+{
+  "name": "terminal-error-sound",
+  "publisher": "rohansingh",
+  "displayName": "Terminal Error Sound",
+  "description": "Plays a custom sound whenever a terminal command fails. Cross-platform, zero configuration.",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "terminal",
+    "error",
+    "sound",
+    "alert",
+    "notification",
+    "audio",
+    "fail"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "terminalErrorSound.toggle",
+        "title": "Terminal Error Sound: Toggle On/Off"
+      },
+      {
+        "command": "terminalErrorSound.test",
+        "title": "Terminal Error Sound: Test Sound"
+      }
+    ],
+    "configuration": {
+      "title": "Terminal Error Sound",
+      "properties": {
+        "terminalErrorSound.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the error sound."
+        },
+        "terminalErrorSound.volume": {
+          "type": "number",
+          "default": 75,
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Volume level (0–100). Currently effective on macOS only."
+        },
+        "terminalErrorSound.soundFile": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to a custom sound file. Leave empty to use the bundled sound."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/node": "18.x",
+    "typescript": "^5.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roahn333singh/Faah..Sound-Extention.git"
+  },
+  "license": "MIT"
+}

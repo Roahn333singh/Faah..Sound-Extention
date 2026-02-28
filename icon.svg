@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="20" fill="url(#bg)"/>
+  <!-- Terminal window -->
+  <rect x="18" y="28" width="68" height="52" rx="6" fill="#0f0f23" stroke="#3a3a5c" stroke-width="2"/>
+  <circle cx="28" cy="36" r="3" fill="#ff4757"/>
+  <circle cx="38" cy="36" r="3" fill="#ffa502"/>
+  <circle cx="48" cy="36" r="3" fill="#2ed573"/>
+  <text x="26" y="58" font-family="monospace" font-size="14" fill="#ff4757" font-weight="bold">&gt; err</text>
+  <text x="26" y="73" font-family="monospace" font-size="10" fill="#ff6b81">✗ fail</text>
+  <!-- Sound waves -->
+  <path d="M 95 54 Q 102 54 102 46" fill="none" stroke="#ff4757" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 95 54 Q 108 54 108 40" fill="none" stroke="#ff6b81" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 95 54 Q 114 54 114 34" fill="none" stroke="#ff7979" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 95 54 Q 102 54 102 62" fill="none" stroke="#ff4757" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 95 54 Q 108 54 108 68" fill="none" stroke="#ff6b81" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 95 54 Q 114 54 114 74" fill="none" stroke="#ff7979" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Speaker icon -->
+  <polygon points="88,48 95,44 95,64 88,60" fill="#ff4757"/>
+  <rect x="84" y="48" width="5" height="12" rx="1" fill="#ff4757"/>
+  <!-- FAAH text -->
+  <text x="64" y="108" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ff4757">FAAH!</text>
+</svg>
